@@ -76,7 +76,7 @@ class Connection
 
         curl_setopt($ch, CURLOPT_POSTFIELDS, $params);
         
-        curl_setopt($ch, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']??‘console’);
+        curl_setopt($ch, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']??'console');
 
         curl_setopt($ch, CURLOPT_HTTPHEADER, array(
             "Content-Type: application/json",
